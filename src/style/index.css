@@ -364,6 +364,15 @@ a {
   .appHeader {
     background: #38302e;
     color: #ffffff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+}
+@media (min-width: 768px) {
+  .appHeader {
+    position: relative;
   }
 }
 
@@ -376,6 +385,13 @@ a {
   height: 100%;
   background: url(/assets/images/webcafe-logo.png);
 }
+@media (min-width: 768px) {
+  .logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 
 .memberOnly {
   background: green;
@@ -383,6 +399,22 @@ a {
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: stretch;
+}
+@media (max-width: 767px) {
+  .memberOnly {
+    order: -1;
+  }
+}
+
+.searchForm__group {
+  background: blue;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+.searchForm__group .formInput__input {
+  width: 28.75rem;
 }
 
 /*# sourceMappingURL=index.css.map */
