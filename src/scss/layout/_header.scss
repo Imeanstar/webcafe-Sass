@@ -1,1 +1,23 @@
-// header.scss
+@use "./../utils" as *;
+
+.appHeader{
+    background: yellow;
+    padding : rem(16px) rem(24px);
+
+    @include mobile{
+        color : $dark-brown;
+    }
+
+    .logo{
+        width : rem(240px);
+        height: rem(48px);
+        &__link{
+            display : 100%;
+            height: 100%;
+            background: pink url(./../../assets/images/webcafe-logo.png );
+        }
+    }
+
+
+}
+
