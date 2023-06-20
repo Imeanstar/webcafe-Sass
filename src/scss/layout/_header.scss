@@ -25,7 +25,6 @@
 .memberOnly {
   background: green;
   @include flexbox($justify: flex-end);
-//   float : right;
 }
 
 // 검색 폼
